@@ -44,37 +44,37 @@ public class FrontPage extends JFrame {
 		background.setBounds(0, 0, d1.width, d1.height);
 		
 		mirror.setText("MIRROR");
-		mirror.setFont(new Font("SansSerif", Font.BOLD, 22));
+		mirror.setFont(new Font("SansSerif", Font.BOLD, 16));
 		d2 = mirror.getPreferredSize();
-		mirror.setBounds((d1.width - d2.width) / 2, (d1.height - d2.height) / 2, d2.width+50, d2.height);
+		mirror.setBounds((d1.width - d2.width) / 2, (d1.height - d2.height) / 2, d2.width, d2.height);
 		mirror.setFocusable(false);
 		mirror.addActionListener(me);
 		
 		lens.setText("LENS");
-		lens.setFont(new Font("SansSerif", Font.BOLD, 22));
+		lens.setFont(new Font("SansSerif", Font.BOLD, 16));
 		//d2 = lens.getPreferredSize();
-		lens.setBounds((d1.width - d2.width) / 2, (d1.height - d2.height) / 2 + 50, d2.width+50, d2.height);
+		lens.setBounds((d1.width - d2.width) / 2, (d1.height - d2.height) / 2 + 50, d2.width, d2.height);
 		lens.setFocusable(false);
 		lens.addActionListener(me);
 		
 		exit.setText("EXIT");
-		exit.setFont(new Font("SansSerif", Font.BOLD, 22));
+		exit.setFont(new Font("SansSerif", Font.BOLD, 16));
 		d2 = exit.getPreferredSize();
-		exit.setBounds((d1.width - d2.width) - 60, 10, d2.width+50, d2.height);
+		exit.setBounds((d1.width - d2.width) - 10, 10, d2.width, d2.height);
 		exit.setFocusable(false);
 		exit.addActionListener(me);
 		
 		info.setText("INFORMATION");
-		info.setFont(new Font("SansSerif", Font.BOLD, 22));
+		info.setFont(new Font("SansSerif", Font.BOLD, 16));
 		d2 = info.getPreferredSize();
-		info.setBounds(10, 10, d2.width+50, d2.height);
+		info.setBounds(10, 10, d2.width, d2.height);
 		info.setFocusable(false);
 		info.addActionListener(me);
 		
 		title.setText("RAY OPTICS VISUALIZER");
-		title.setFont(new Font("SansSerif", Font.BOLD, 60));
+		title.setFont(new Font("SansSerif", Font.BOLD, 45));
 		d2 = title.getPreferredSize();
-		title.setBounds((d1.width - d2.width) /2, mirror.getY() - 100, d2.width+50, d2.height);
+		title.setBounds((d1.width - d2.width) / 2, mirror.getY() - 100, d2.width, d2.height);
 		
 		this.add(background);
 		background.add(lens);
@@ -94,3 +94,7 @@ public class FrontPage extends JFrame {
 		FrontPage fp = new FrontPage();
 	}
 }
+	
+		
+		
+	
